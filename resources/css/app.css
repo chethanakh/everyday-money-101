@@ -5,7 +5,83 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+/* Add these lines to enable the plugins */
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/container-queries";
+
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    /* --- Colors --- */
+    --color-primary-fixed-dim: #a2d1b9;
+    --color-secondary-container: #d5e3fc;
+    --color-primary: #154231;
+    --color-on-secondary-fixed-variant: #3a485b;
+    --color-tertiary-fixed: #ffdad8;
+    --color-on-primary: #ffffff;
+    --color-tertiary-container: #754443;
+    --color-surface: #f7f9fb;
+    --color-on-background: #191c1e;
+    --color-background: #f7f9fb;
+    --color-surface-container-high: #e6e8ea;
+    --color-primary-fixed: #bdedd4;
+    --color-outline: #717973;
+    --color-on-secondary: #ffffff;
+    --color-on-error: #ffffff;
+    --color-outline-variant: #c0c8c2;
+    --color-secondary: #515f74;
+    --color-secondary-fixed-dim: #b9c7df;
+    --color-surface-container: #eceef0;
+    --color-error: #ba1a1a;
+    --color-inverse-on-surface: #eff1f3;
+    --color-on-surface-variant: #414944;
+    --color-on-secondary-container: #57657a;
+    --color-on-secondary-fixed: #0d1c2e;
+    --color-surface-dim: #d8dadc;
+    --color-tertiary-fixed-dim: #f8b6b4;
+    --color-surface-variant: #e0e3e5;
+    --color-inverse-surface: #2d3133;
+    --color-primary-container: #2e5a47;
+    --color-surface-bright: #f7f9fb;
+    --color-on-tertiary-fixed-variant: #683a39;
+    --color-on-primary-fixed-variant: #224f3c;
+    --color-surface-container-lowest: #ffffff;
+    --color-on-primary-fixed: #002115;
+    --color-on-tertiary-fixed: #341010;
+    --color-on-surface: #191c1e;
+    --color-on-primary-container: #a0cfb7;
+    --color-secondary-fixed: #d5e3fc;
+    --color-inverse-primary: #a2d1b9;
+    --color-surface-container-low: #f2f4f6;
+    --color-on-tertiary: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-surface-tint: #3b6753;
+    --color-on-tertiary-container: #f6b4b2;
+    --color-tertiary: #5a2e2d;
+    --color-surface-container-highest: #e0e3e5;
+    --color-on-error-container: #93000a;
+
+    /* --- Border Radius --- */
+    --radius-default: 0.125rem;
+    --radius-lg: 0.25rem;
+    --radius-xl: 0.5rem;
+    --radius-full: 0.75rem;
+
+    /* --- Font Families --- */
+    --font-headline: "Newsreader";
+    --font-body: "Public Sans";
+    --font-label: "Public Sans";
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.serif-tight {
+    font-family: 'Newsreader';
+    letter-spacing: -0.02em;
+}
+
+.glass-nav {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
